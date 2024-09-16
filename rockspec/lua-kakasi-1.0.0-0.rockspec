@@ -1,7 +1,7 @@
 package = "lua-kakasi"
 version = "1.0.0-0"
 source = {
-   url = "lua-kakasi-1.0.0-0.tar.gz",
+   url = "https://github.com/MayamaTakeshi/lua-kakasi/archive/refs/tags/1.0.0-0.tar.gz"
    dir = "lua-kakasi"
 }
 description = {
