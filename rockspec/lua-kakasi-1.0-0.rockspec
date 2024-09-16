@@ -1,7 +1,7 @@
 package = "lua-kakasi"
 version = "1.0-0"
 source = {
-   url = "https://github.com/MayamaTakeshi/lua-kakasi",
+   url = "git://github.com/MayamaTakeshi/lua-kakasi.git",
    tag = "1.0-0"
 }
 description = {
