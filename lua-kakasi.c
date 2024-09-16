@@ -73,12 +73,16 @@ static int lua_kakasi_convert(lua_State *L) {
 
 // Register the Kakasi functions
 int luaopen_kakasi(lua_State *L) {
-    static const struct luaL_reg kakasi_funcs[] = {
+    static const struct luaL_Reg kakasi_funcs[] = {
         {"convert", lua_kakasi_convert},
         {NULL, NULL}
     };
 
+#if LUA_VERSION_NUM == 501
     luaL_register(L, "kakasi", kakasi_funcs);
+#else
+    luaL_newlib(L, kakasi_funcs);
+#endif
+
     return 1;
 }
-
