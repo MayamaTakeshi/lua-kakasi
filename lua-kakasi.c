@@ -79,10 +79,12 @@ int luaopen_kakasi(lua_State *L) {
     };
 
 #if LUA_VERSION_NUM == 501
-    luaL_register(L, "kakasi", kakasi_funcs);
+    lua_newtable(L);                         // create table
+    luaL_register(L, NULL, kakasi_funcs);   // register into table (no global set)
 #else
-    luaL_newlib(L, kakasi_funcs);
+    luaL_newlib(L, kakasi_funcs);           // for Lua 5.2+
 #endif
 
-    return 1;
+    return 1; // return module table
 }
+

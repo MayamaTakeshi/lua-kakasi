@@ -1,8 +1,8 @@
 package = "lua-kakasi"
-version = "1.0-0"
+version = "1.0-1"
 source = {
    url = "git://github.com/MayamaTakeshi/lua-kakasi.git",
-   tag = "1.0-0"
+   tag = "1.0-1"
 }
 description = {
    summary = "A Lua extension module for kakasi",
