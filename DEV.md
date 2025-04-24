@@ -11,9 +11,12 @@ utf-8 : ハロー. こんにちは. This is a test for kakasi: 群馬県の有�
 euc-jp: ϥ. . This is a test for kakasi: ̾ʤ.
 romaji: haro^ . konnichiha . This is a test for kakasi: gunmaken no yuumei nago touchi ryouri .
 ```
+# Publish
+Just log in into https://luarocks.org/
 
+Then go to https://luarocks.org/upload and use "Choose a *.rockspec file"
 
+and proess "Submit".
 
-
-
+That should be all.
 
